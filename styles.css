@@ -13,6 +13,7 @@ body{
 
     background-size: cover;
     font-family: Jersey 15;
+    overflow: hidden;
 }
 
 .main{
@@ -281,4 +282,64 @@ p{
     color: #08e65d;
 }
 
+.register{
+    background: transparent;
+    color: #08e65d;
+    margin-left: 550px;
+    width: 250px;
+    height: 600px;
+    margin-top: 70px;
 
+
+}
+.register h2{
+    text-align: center;
+    margin-left: -50px;
+}
+.register input{
+    margin: 20px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #08e65d;
+}
+.register ::placeholder{
+    text-align: center;
+    font-size: 12px;
+}
+
+.register button{
+    width: 40%;
+    height: 30px;
+    margin-left: 60px;
+    background: #08e65d;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.register button:hover{
+    background-color: #fff;
+    color: #08e65d;
+}
+.register p{
+    font-size: 16px;
+    text-align: center;
+    margin-left: -40px;
+}
+.register a{
+    color: #08e65d;
+    text-decoration: none;
+}
+
+.register .icons{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.register .icons icon-icon{
+    padding: 10px;
+}
+.register .icons ion-icon:hover{
+    color: white;
+}
