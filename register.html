@@ -28,17 +28,18 @@
         </div>
         <div class="register">
             <h2>Sign Up</h2>
-            <input type="text" placeholder="First Name" class="text" required>
+            <form action="" method="post">
+            <input type="text" placeholder="First Name" class="text" name="firstname" required>
             <br>
-            <input type="text" placeholder="Last Name" class="text" required>
+            <input type="text" placeholder="Last Name" class="text" name="lastname" required>
             <br>
-            <input type="email" placeholder="Email" class="text" required>
+            <input type="email" placeholder="Email" class="text" name="email" required>
             <br>
-            <input type="password" placeholder="Enter New password" class="text" required min="4" maximum="16">
+            <input type="password" placeholder="Enter New password" class="text" name="password" required min="4" maximum="16">
             <br>
-            <input type="text" placeholder="Rewrite Password" class="text" required>
+            <input type="text" placeholder="Rewrite Password" class="text" name="cpassword" required>
             <br>
-            <button>Sign Up</button>
+            <button name="submit">Sign Up</button>
             <p>Already Have an Account</p>
             <p><a href="index.html">Sign in</a></p>
             <div class="icons">
@@ -48,6 +49,7 @@
                 <a href="#"><ion-icon name="logo-google"></ion-icon></ion-icon></a>
                 <a href="#"><ion-icon name="logo-github"></ion-icon></ion-icon></a>
             </div>
+            </form>
 
 
 

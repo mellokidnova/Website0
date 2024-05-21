@@ -13,7 +13,7 @@ body{
 
     background-size: cover;
     font-family: Jersey 15;
-    overflow: hidden;
+    overflow: none;
 }
 
 .main{
