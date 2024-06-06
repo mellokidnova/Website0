@@ -1,6 +1,3 @@
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +5,8 @@
 
 }
 body{
+    position: relative;
     background-image: linear-gradient(to right top, #3a9067, #00776b, #005e65, #134452, #1d2c38, #182433, #151c2d, #131427, #121536, #101646, #0e1655, #0d1564);
-
-
     background-size: cover;
     font-family: Jersey 15;
     overflow: none;
@@ -116,173 +112,74 @@ ul li a:hover{
 .srch:focus{
     outline: none;
 }
-.content{
-    color: #fff;
-    width: 100px;
-    height: none;
-    margin-left: 40px;
-    margin-top: 40px;
-    color: #08e65d;
-    font-size: 50px;
 
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
-.info{
-    width: 500px;
-    margin-left: 70px;
-    margin-top: 0
-}
-p{
-    color: white;
-    margin-left: 40px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.info .cn{
-    width: 160px;
-    height: 40px;
-    background: #08e65d;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.info .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-
-}
-.cn:hover{
-    background-color: #fff;
-}
-.info span{
-    color: #08e65d;
-    font-size: 60px;
-}
-
-.form{
-    width: 250px;
-    height: 380px;
-    background-color: transparent;
-    position: absolute;
-    top: 120px;
-    left: 870px;
-    border-radius: 10px;
-    padding: 25px;
-
-}
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 22px;
-    color: #08e65d;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input{
-    width: 240px;
-    height: 35px;
+.register .form input{
+    margin: 20px;
+    height: 30px;
+    width: 200px;
     background: transparent;
-    border-bottom: 1px solid #08e65d;
-    border-top: none;
-    border-right: none;
     border-left: none;
-    font-size: 15px;
-    color: #fff;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #08e65d;
     outline: none;
-}
-.form input:focus{
-    outline: none;
+    color: white;
 
 }
-
+.register .form input:focus{
+    outline: none;
+}
 ::placeholder{
-    color: #fff;
-    font-family: Arial;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-.btnn{
-    width: 240px;
+.register .form button{
+    width: 200px;
     height: 40px;
-    background: #08e65d;
+    background-color: #08e65d;
     border: none;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
-    transition: 0.4s ease;
-
+    transition: .4s ease;
 }
-
-.btnn:hover{
+.register .form button:hover{
     background-color: #fff;
     color: #08e65d;
 }
-.btnn a{
+.register .form button a{
     text-decoration: none;
     color: black;
     font-weight: bold
 }
 
-.form .link{
-    font-family: Arial;
-    font-size: 17px;
-    padding-top: 10px;
-    text-align: center;
-    padding-right: 30px;
-
+p{
+    margin: 20px;
+    font-size: 18px;
+    color: white;
+    margin-left: 75px;
 }
-.form .account{
-    font-family: Arial;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-    padding-right: 30px;
-}
-
-.form .link a{
-
-    text-decoration: none;
-    color: #08e65d;
-}
-
-.liw{
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.anchor{
-    padding-top: 10px;
-    margin-top: 2px;
-}
-
 .form .icons a{
     text-decoration: none;
     color: #fff;
 }
-
 .form .icons ion-icon{
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
-    padding-top: 2px;
     transition: .3s ease;
+    margin-top: -20px;
 }
-
 .form .icons ion-icon:hover{
     color: #08e65d;
 }

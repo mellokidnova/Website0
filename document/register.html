@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="/Website0/css/styles.css">
+    <title>Zero Industries</title>
+    <link rel="stylesheet" href="/Website0/css/registration.css">
 </head>
 <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">Zero Inc.</h2>
+                <h2 class="logo"><a href="index.html">Zero Inc.</a></h2>
             </div>
             <div class="menu">
                 <ul>
@@ -25,42 +25,35 @@
                 <input class="srch" type="text" name="search" placeholder="Type To Text">
                 <a href="#"><button class="btn">Search</button></a>
             </div>
+
         </div>
+        <div class="tech"></div>
         <div class="register">
-            <h2>Sign Up</h2>
-            <form action="" method="post">
-            <input type="text" placeholder="First Name" class="text" name="firstname" required>
-            <br>
-            <input type="text" placeholder="Last Name" class="text" name="lastname" required>
-            <br>
-            <input type="email" placeholder="Email" class="text" name="email" required>
-            <br>
-            <input type="password" placeholder="Enter New password" class="text" name="password" required min="4" maximum="16">
-            <br>
-            <input type="text" placeholder="Rewrite Password" class="text" name="cpassword" required>
-            <br>
-            <button name="submit">Sign Up</button>
-            <p>Already Have an Account</p>
-            <p><a href="index.html">Sign in</a></p>
-            <div class="icons">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
-                <a href="#"><ion-icon name="logo-google"></ion-icon></ion-icon></a>
-                <a href="#"><ion-icon name="logo-github"></ion-icon></ion-icon></a>
-            </div>
+            <form action="process-signup.php" class="form" method="post" novalidate>
+                <input name="firstname" type="text" placeholder="First Name">
+                <br>
+                <input name="lastname" type="text" placeholder="Last Name">
+                <br>
+                <input name="email" type="email" placeholder="Email">
+                <br>
+                <input name="password" type="text" placeholder="Password">
+                <br>
+                <input name="confirmPassword" type="text" placeholder="Confirm Password">
+                <br>
+                <button>Sign Up</button>
+                <p class="liw">Sign Up with</p><br>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+                    <a href="https://twitter.com/?lang=en"><ion-icon name="logo-twitter"></ion-icon></ion-icon></a>
+                    <a href="https://accounts.google.co.ke/"><ion-icon name="logo-google"></ion-icon></ion-icon></a>
+                    <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></ion-icon></a>
+                </div>
             </form>
-
-
-
-
-
-
-
         </div>
+
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
