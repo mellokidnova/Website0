@@ -37,6 +37,10 @@ body{
     float: left;
     padding-top: 20px;
 }
+.logo a{
+    color: #08e65d;
+
+}
 .menu{
     width: 400px;
     float: left;
