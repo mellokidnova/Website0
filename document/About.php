@@ -8,23 +8,9 @@
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo"><a href="index.html">Zero Inc.</a></h2>
-            </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Industries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="search">
-            <input class="srch" type="text" name="search" placeholder="Type To Text">
-            <a href="#"><button class="btn">Search</button></a>
-        </div>
+        <?php
+            include('../php/nav.php');
+        ?>
     </div>
     <div class="header">
         <h1>About us</h1>

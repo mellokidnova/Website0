@@ -286,3 +286,9 @@ p{
 .form .icons ion-icon:hover{
     color: #08e65d;
 }
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

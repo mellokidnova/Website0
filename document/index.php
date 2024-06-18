@@ -8,28 +8,13 @@
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo"><a href="index.html">Zero Inc.</a></h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Industries</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <input class="srch" type="text" name="search" placeholder="Type To Text">
-                <a href="#"><button class="btn">Search</button></a>
-            </div>
-        </div>
+        <?php
+            include('../php/nav.php');
+        ?>
         <div class="info">
             <h1 class="content">Software Development & <br>Network Administrators</span></h1>
             <p>Zero Industries is  multinational conglomerate  owned and chaired by Bertram Brian.The Seven Board Members  make most of the  company decisions on Bertram Chabu's behalf, since Bertram's time is largely occupied by his other duties.</p>
-            <a href="register.html"><button class="cn">Join Us</button></a>
+            <a href="register.php"><button class="cn">Join Us</button></a>
 
             <div class="form">
                 <h2>Login Here</h2>
@@ -38,7 +23,7 @@
                 <button class="btnn"><a href="login.php">Login</a></button>
 
                 <p class="account" >Don't Have an Account<br></p>
-                <p class="link"><a href="#"  class="anchor">Sign Up</a></p>
+                <p class="link"><a href="register.php"  class="anchor">Sign Up</a></p>
                 <p class="liw">Log in with</p><br>
                 <div class="icons">
                     <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
