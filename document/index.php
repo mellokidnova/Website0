@@ -1,3 +1,9 @@
+<?php
+
+    include('../php/conn.php');
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,3 +54,23 @@
 
 </body>
 </html>
+<?php
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+
+    if(isset($_SERVER['REQUEST_METHOD'])== $_POST['submit']){
+        $sql = "SELECT * FROM `register` WHERE `username` = '$username' AND `password` = '$password'";
+        $result = mysqli_query($connection,$sql);
+
+        if(mysqli_num_rows($result) == 1){
+            header('location:../document/index.php');
+        }else{
+            echo "<script>alert('Incorrect Username or Password')</script>";
+        }
+
+    }
+
+
+?>
