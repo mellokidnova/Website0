@@ -42,16 +42,25 @@
 <?php
     include '../php/conn.php';
 
-
-    if(isset($_POST['login'])){
+    if(isset($_POST['register'])){
         $name = $_POST['name'];
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $sql = "INSERT INTO `users`(`id`, `name`, `username`, `password`, `email`, `created_at`) VALUES ('$name','$username','$password','$re_password)";
+        // Example of using mysqli
+        $sql = "INSERT INTO `users` (`name`, `username`, `email`, `password`)
+                VALUES ('$name', '$username', '$email', '$password')";
 
+        if(mysqli_query($conn, $sql)){
+            echo "<script>alert('Registration Successful')</script>";
+            header('Location: ../document/index.php');
+            exit; // Ensure script stops execution after redirection
+        } else{
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
+
+        mysqli_close($conn);
     }
-
-
 ?>
+

@@ -7,7 +7,7 @@
 
 }
 body{
-    background-color: black;
+    background-image: linear-gradient(to right top, #3a9067, #00776b, #005e65, #134452, #1d2c38, #182433, #151c2d, #131427, #121536, #101646, #0e1655, #0d1564);
     color: #08e65d;
     overflow: hidden;
 
