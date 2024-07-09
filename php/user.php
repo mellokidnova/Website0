@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+    $sql = "INSERT INTO `users`( `name`, `email`, `created_at`) VALUES ('$name', '$email)";
 
     if (mysqli_query($conn, $sql)) {
         echo "User added successfully";

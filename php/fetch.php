@@ -1,7 +1,7 @@
 <?php
 include 'db_config.php';
 
-$sql = "SELECT `id`, `name`, `email`, `created_at` FROM `users` WHERE 1";
+$sql = "SELECT `id`, `name`, `email` FROM `users` WHERE 1";
 $result = mysqli_query($conn, $sql);
 
 $users = array();
