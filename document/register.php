@@ -48,9 +48,8 @@
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $re_password = $_POST['re_password'];
 
-        $sql = ""
+        $sql = "INSERT INTO `users`(`id`, `name`, `username`, `password`, `email`, `created_at`) VALUES ('$name','$username','$password','$re_password)";
 
     }
 
