@@ -4,14 +4,9 @@
 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zer0 Design</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+<?php
+    include('../php/head.php');
+?>
 <body>
     <div class="main">
         <?php
@@ -29,7 +24,7 @@
                 <button class="btnn"><a href="login.php">Login</a></button>
 
                 <p class="account" >Don't Have an Account<br></p>
-                <p class="link"><a href="register.php"  class="anchor">Sign Up</a></p>
+                <p class="link"><a href="registration.php"  class="anchor">Sign Up</a></p>
                 <p class="liw">Log in with</p><br>
                 <div class="icons">
                     <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></ion-icon></a>
